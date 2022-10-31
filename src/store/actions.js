@@ -18,3 +18,9 @@ export function taskDeleted(id) {
     payload: { id },
   };
 }
+export function taskAdded() {
+  return {
+    type: actionTypes.taskRequested,
+    payload: { id: 2, title: "New Task", completed: false },
+  };
+}
